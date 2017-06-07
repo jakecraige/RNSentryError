@@ -12,6 +12,11 @@ import {
   View
 } from 'react-native';
 
+import { Sentry } from 'react-native-sentry';
+
+Sentry.config("https://fake:fake@sentry.io/162335").install();
+
+
 export default class TestSentry extends Component {
   render() {
     return (
